@@ -1,0 +1,24 @@
+<div>
+    <mat-card>
+        <mat-form-field>
+                <input [(ngModel)]="subreddit" matInput placeholder="Search Subreddit">
+        </mat-form-field>
+
+        <mat-icon (click)="search(subreddit)">search</mat-icon>
+    </mat-card> 
+
+    <mat-card>
+        <h1>{{postTitle}}</h1>
+        <mat-card *ngFor="let post of posts">
+           <p><a href="{{post.data.url}}">{{post.data.title}}</a></p> 
+           <p><a href="https://www.reddit.com{{post.data.permalink}}">Read Comments</a></p> 
+           <h5><i>posted by: {{post.data.author}}</i></h5>
+           
+           <h5><i>posted on: {{post.data.created_utc}}</i></h5>
+
+           <p></p>
+        </mat-card>
+
+        <div style="text-align: center; font-weight: bold" *ngIf="posts">End of Posts</div>
+    </mat-card>
+  </div>    
