@@ -1,3 +1,13 @@
+Steps to run the project: 
+
+1) Clone the Repository
+    Clone URL: git@github.com:DheerajVislavath/reddit_clone.git
+2) After getting the project, Install all the dependencies using "npm install". 
+    Note: System must be preinstalled with Node, npm.
+3) After the installation of dependencies. Run the project using the command "ng serve" or "npm start" inside the project root folder.
+4) Open the chrome browser and Navigate to "http://localhost:4200/".
+5) Type in the desired subreddit name in the search box to get the latest 25 posts related to that specfic subreddit.
+
 # Reddit
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
