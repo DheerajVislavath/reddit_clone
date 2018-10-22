@@ -7,10 +7,12 @@ import { MaterialComponentsModule } from './material-components/material-compone
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { TimeConvertPipe } from './time-convert.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TimeConvertPipe
   ],
   imports: [
     BrowserModule,

@@ -14,7 +14,7 @@
            <p><a href="https://www.reddit.com{{post.data.permalink}}">Read Comments</a></p> 
            <h5><i>posted by: {{post.data.author}}</i></h5>
            
-           <h5><i>posted on: {{post.data.created_utc}}</i></h5>
+           <h5><i>posted on: {{post.data.created_utc | timeConvert}}</i></h5>
         </mat-card>
 
         <div style="text-align: center; font-weight: bold" *ngIf="posts">End of Posts</div>
